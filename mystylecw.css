@@ -1,0 +1,296 @@
+body {
+	background-image: url(Warlords.jpg), url(grad1.png);
+	background-position: center 50px, center 350px;
+	background-repeat:repeat-x;
+	background-size: 500px, cover;
+	background-color: black;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+
+nav {
+	position: fixed;
+	background-attachment: scroll;
+	width: 100%;
+	top: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	
+}
+
+li {
+    float: left;
+	border-width:5px;  
+    border-style:outset;
+	border-bottom-color: red;
+	border-left-color: red;
+	border-top-color:black;
+	border-right-color:black;
+	transition: 0.5s;
+	
+}
+
+li:hover{
+	border-bottom-color: cyan;
+	border-left-color: cyan;
+	
+}
+
+li:hover:last-child{
+	transition: 0.5s;
+	border-bottom-color: green;
+	border-left-color: green;	
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    color: brown;
+	background-color: cyan;
+	transition: 0.5s;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.valid{
+transition: all 0.5s;
+cursor: help;	
+}
+
+.valid span { 
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.valid span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.valid:hover span {
+  padding-right: 25px;
+}
+
+.valid:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.valid:hover {
+	background-color: green;
+	color: yellow;
+	border-bottom-color: green;
+	border-left-color: green;
+	
+}
+
+
+li:last-child {
+	float: right;
+}
+
+
+.dropdown-content {
+    display: none;
+	margin-left:-5px;
+    position: absolute;
+    background-color: skyblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: cyan;
+	color: purple;
+	font-weight:bold;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+	
+}
+
+
+
+
+
+
+
+
+
+.container {
+	position: absolute;
+}
+
+.center {
+	position: absolute;
+    left: 0;
+    top: 5%;
+    text-align: center;
+    font-size: 48px;
+}
+
+
+
+header {
+	background: rgba(255,255,240,0.8);
+	padding: 1em;
+	margin: 1em 1em 1em 1em;
+	font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
+	
+	
+}
+
+
+
+
+
+h1 {
+	font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
+	font-size: 60px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	text-align: center;
+	
+	
+	
+	
+}
+h3 {
+	font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+}
+p {
+	font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 19.99px;
+}
+blockquote {
+	font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 29.99px;
+}
+pre {
+	font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.57px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.funny {
+  cursor: url("FUNNY.ani"), auto;
+}
+
+.happy {
+    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+  }
+  
+ .sad {
+    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/sad.png"), auto;
+  }
+
+.meh {
+    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/meh.png"), auto;
+  }
+  
+ .not-allowed{
+	 cursor: not-allowed;
+ } 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ @media (max-width: 400px) {
+    li {
+        float: none;
+        width:100%;
+    }
+	li a:hover{
+		width:100%;
+	}
+	.dropdown-content a:hover {
+		width:185px;
+		#font-weight:normal;
+	}
+}
+  
+  
+ 
+
+  
+  
+  
+  
+
+  
+  
+ 
